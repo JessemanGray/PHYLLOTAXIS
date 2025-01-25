@@ -1,2 +1,2 @@
 # PHYLLOTAXIS
-PHYLLOTAXIS: A study in 2D and phyllotaxis matrices visualization. 
+PHYLLOTAXIS: A study in 2D and 3D phyllotaxis matrices visualization. 
