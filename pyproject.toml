@@ -1,0 +1,16 @@
+[project]
+name = "phyllo_graph"
+version = "0.1.0"
+description = "3D Phyllo Viz with Streamlit"
+authors = [{ name = "Jesse Gray", email = "jessemangray@gmail.com" }]
+dependencies = [
+    "streamlit>=1.32.0",
+    "plotly>=5.18.0",
+    "numpy>=1.24.0",
+    "uvicorn>=0.27.0",
+    "pydantic>=2.6.0",
+]
+
+[build-system]
+requires = ["uv>=0.1.0"]
+build-backend = "uv.pip"
