@@ -53,7 +53,7 @@ def create_figure(x, y, z, colors):
                 z=1
             )
         ))
-    ) for a in np.linspace(0, 7200, 1500)]
+    ) for a in np.linspace(0, 7200, 500)]
     
     fig.update(
         frames=frames,
