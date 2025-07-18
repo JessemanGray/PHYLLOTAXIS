@@ -1,40 +1,12 @@
 import streamlit as st
 import plotly.graph_objects as go
 import numpy as np
-<<<<<<< HEAD
-from pydantic import BaseModel
-import uvicorn
-import threading
-
-
-# Pydantic models for API
-class PhyllotaxisParams(BaseModel):
-    num_points: int = 1000
-    golden_angle_multiplier: float = 1.0
-    radius: float = 10.0
-    animation_frames: int = 100
-    color_scheme: str = "blue_to_red"
-
-class PhyllotaxisResponse(BaseModel):
-    x_vals: list
-    y_vals: list
-    z_vals: list
-    time_vals: list
-    color_vals: list
-    frames: list
-
-def generate_sunflower_data(params: PhyllotaxisParams):
-    golden_angle = np.pi * (3 - np.sqrt(5)) * params.golden_angle_multiplier
-    time_embeddings = np.linspace(0, 1, params.num_points)
-    x_vals, y_vals, z_vals, time_vals, color_vals = [], [], [], [], []
-=======
 
 def generate_sunflower_data(num_points, angle_mult, radius, color_scheme):
     """Generate sunflower phyllotaxis data"""
     golden_angle = np.pi * (3 - np.sqrt(5)) * angle_mult
     t = np.linspace(0, 1, num_points)
     x, y, z, colors = [], [], [], []
->>>>>>> 6fecfd6e198bd827e5bc02f5e92d74929b4ff33a
     
     for i, time_val in enumerate(t):
         angle = i * golden_angle
