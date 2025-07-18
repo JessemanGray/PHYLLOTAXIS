@@ -1,13 +1,10 @@
 import streamlit as st
 import plotly.graph_objects as go
 import numpy as np
-from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 import uvicorn
 import threading
 
-# FastAPI app for REST API
-api = FastAPI(title="Sunflower Phyllotaxis API", version="1.0.0")
 
 # Pydantic models for API
 class PhyllotaxisParams(BaseModel):
